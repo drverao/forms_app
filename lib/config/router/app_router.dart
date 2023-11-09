@@ -1,4 +1,4 @@
-import 'package:forms_app/presentation/screens.dart';
+import 'package:forms_app/presentation/screens/screens.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(routes: [
@@ -13,5 +13,9 @@ final appRouter = GoRouter(routes: [
   GoRoute(
     path: '/counter-blocs',
     builder: (context, state) => const BlocCounterScreen(),
+  ),
+  GoRoute(
+    path: '/new-user',
+    builder: (context, state) => const RegisterScreen(),
   ),
 ]);
